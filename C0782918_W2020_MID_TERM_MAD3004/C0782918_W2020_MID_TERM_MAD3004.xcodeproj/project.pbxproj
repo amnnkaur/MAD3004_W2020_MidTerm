@@ -13,6 +13,7 @@
 		9B8694B523F610F500B9D38A /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B423F610F500B9D38A /* Internet.swift */; };
 		9B8694B723F6127200B9D38A /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B623F6127200B9D38A /* Mobile.swift */; };
 		9B8694B923F613F900B9D38A /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B823F613F900B9D38A /* Hydro.swift */; };
+		9B8694BB23F6148B00B9D38A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694BA23F6148B00B9D38A /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		9B8694B423F610F500B9D38A /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9B8694B623F6127200B9D38A /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B8694B823F613F900B9D38A /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9B8694BA23F6148B00B9D38A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				9B8694B423F610F500B9D38A /* Internet.swift */,
 				9B8694B623F6127200B9D38A /* Mobile.swift */,
 				9B8694B823F613F900B9D38A /* Hydro.swift */,
+				9B8694BA23F6148B00B9D38A /* Customer.swift */,
 			);
 			path = C0782918_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B8694B723F6127200B9D38A /* Mobile.swift in Sources */,
+				9B8694BB23F6148B00B9D38A /* Customer.swift in Sources */,
 				9B8694B023F60DF900B9D38A /* Bill.swift in Sources */,
 				9B8694A923F60CCE00B9D38A /* main.swift in Sources */,
 				9B8694B523F610F500B9D38A /* Internet.swift in Sources */,
