@@ -14,5 +14,6 @@ public class Bill {
     var billDate : Date
     var billType : Enum.type
     var totalBillAmount : Double
+    
 }
 

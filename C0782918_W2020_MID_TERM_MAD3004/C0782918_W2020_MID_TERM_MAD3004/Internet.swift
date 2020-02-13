@@ -8,7 +8,9 @@
 
 import Foundation
 
-public class Internet
+public class Internet : Bill
 {
+    var providerName : String
+    var internetGBUsed : Int
     
 }
