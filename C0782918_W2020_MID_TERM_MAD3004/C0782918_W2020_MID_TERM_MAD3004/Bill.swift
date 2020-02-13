@@ -10,8 +10,9 @@ import Foundation
 
 public class Bill {
     
-    
-    
-    
+    var billId : Int
+    var billDate : Date
+    var billType : Enum.type
+    var totalBillAmount : Double
 }
 
