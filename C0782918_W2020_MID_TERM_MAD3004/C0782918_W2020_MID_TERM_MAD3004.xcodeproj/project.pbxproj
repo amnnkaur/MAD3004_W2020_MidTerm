@@ -10,6 +10,7 @@
 		9B8694A923F60CCE00B9D38A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694A823F60CCE00B9D38A /* main.swift */; };
 		9B8694B023F60DF900B9D38A /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694AF23F60DF900B9D38A /* Bill.swift */; };
 		9B8694B323F60ED900B9D38A /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B223F60ED900B9D38A /* Enum.swift */; };
+		9B8694B523F610F500B9D38A /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B423F610F500B9D38A /* Internet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		9B8694A823F60CCE00B9D38A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B8694AF23F60DF900B9D38A /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9B8694B223F60ED900B9D38A /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		9B8694B423F610F500B9D38A /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				9B8694A823F60CCE00B9D38A /* main.swift */,
 				9B8694AF23F60DF900B9D38A /* Bill.swift */,
 				9B8694B223F60ED900B9D38A /* Enum.swift */,
+				9B8694B423F610F500B9D38A /* Internet.swift */,
 			);
 			path = C0782918_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				9B8694B023F60DF900B9D38A /* Bill.swift in Sources */,
 				9B8694A923F60CCE00B9D38A /* main.swift in Sources */,
+				9B8694B523F610F500B9D38A /* Internet.swift in Sources */,
 				9B8694B323F60ED900B9D38A /* Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
