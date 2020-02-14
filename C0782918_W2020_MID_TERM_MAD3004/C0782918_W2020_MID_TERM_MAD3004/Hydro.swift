@@ -12,4 +12,10 @@ public class Hydro : Bill
 {
     var agencyName : String
     var unitConsumed : String
+    
+    init(agencyName: String, unitConsumed:String) {
+        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##Enum.type#>, totalBillAmount: <#T##Double#>)
+        self.agencyName = agencyName
+        self.unitConsumed = unitConsumed
+    }
 }

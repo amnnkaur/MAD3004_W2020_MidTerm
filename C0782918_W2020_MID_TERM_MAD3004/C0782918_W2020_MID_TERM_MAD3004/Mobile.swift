@@ -15,4 +15,13 @@ public class Mobile : Bill
     var mobileNumber : Int
     var internetGBUsed : String
     var minuteUsed : String
+    
+    init(mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: String, minuteUsed: String) {
+        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##Enum.type#>, totalBillAmount: <#T##Double#>)
+        self.mobileManufacturerName = mobileManufacturerName
+        self.planName = planName
+        self.mobileNumber = mobileNumber
+        self.internetGBUsed = internetGBUsed
+        self.minuteUsed = minuteUsed
+    }
 }

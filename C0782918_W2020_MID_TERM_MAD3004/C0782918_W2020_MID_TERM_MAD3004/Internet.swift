@@ -13,4 +13,9 @@ public class Internet : Bill
     var providerName : String
     var internetGBUsed : String
     
+    init(providerName : String, internetGBUsed : String) {
+        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##Enum.type#>, totalBillAmount: <#T##Double#>)
+        self.providerName = providerName
+        self.internetGBUsed = internetGBUsed
+    }
 }
