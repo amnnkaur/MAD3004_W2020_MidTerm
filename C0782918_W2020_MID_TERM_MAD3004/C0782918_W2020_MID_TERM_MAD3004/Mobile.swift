@@ -16,7 +16,7 @@ public class Mobile : Bill
     var internetGBUsed : String
     var minuteUsed : String
     
-    init(billId:Int, billDate: String, billType: Enum.type, totalBillAmount: Double, mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: String, minuteUsed: String) {
+    init(billId:Int, billDate: String, billType: Enum.type, totalBillAmount: Float, mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: String, minuteUsed: String) {
         
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName

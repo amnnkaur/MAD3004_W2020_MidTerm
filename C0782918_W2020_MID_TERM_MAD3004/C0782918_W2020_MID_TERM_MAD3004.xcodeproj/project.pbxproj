@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B774FE223F780B800299547 /* Customer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FE123F780B800299547 /* Customer+extension.swift */; };
-		9B774FF723F7813A00299547 /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FF623F7813A00299547 /* Int+extension.swift */; };
+		9B774FF723F7813A00299547 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FF623F7813A00299547 /* String+extension.swift */; };
 		9B774FF923F781A400299547 /* Currency+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FF823F781A400299547 /* Currency+extension.swift */; };
 		9B774FFB23F781D700299547 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FFA23F781D700299547 /* Date+Extension.swift */; };
 		9B8694A923F60CCE00B9D38A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694A823F60CCE00B9D38A /* main.swift */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		9B774FE123F780B800299547 /* Customer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+extension.swift"; sourceTree = "<group>"; };
-		9B774FF623F7813A00299547 /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
+		9B774FF623F7813A00299547 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		9B774FF823F781A400299547 /* Currency+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+extension.swift"; sourceTree = "<group>"; };
 		9B774FFA23F781D700299547 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		9B8694A523F60CCE00B9D38A /* C0782918_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0782918_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +88,7 @@
 				9B8694BA23F6148B00B9D38A /* Customer.swift */,
 				9B8694BC23F617FC00B9D38A /* IDisplay.swift */,
 				9B774FE123F780B800299547 /* Customer+extension.swift */,
-				9B774FF623F7813A00299547 /* Int+extension.swift */,
+				9B774FF623F7813A00299547 /* String+extension.swift */,
 				9B774FF823F781A400299547 /* Currency+extension.swift */,
 				9B774FFA23F781D700299547 /* Date+Extension.swift */,
 			);
@@ -161,7 +161,7 @@
 				9B774FFB23F781D700299547 /* Date+Extension.swift in Sources */,
 				9B8694B523F610F500B9D38A /* Internet.swift in Sources */,
 				9B8694B923F613F900B9D38A /* Hydro.swift in Sources */,
-				9B774FF723F7813A00299547 /* Int+extension.swift in Sources */,
+				9B774FF723F7813A00299547 /* String+extension.swift in Sources */,
 				9B774FF923F781A400299547 /* Currency+extension.swift in Sources */,
 				9B774FE223F780B800299547 /* Customer+extension.swift in Sources */,
 				9B8694B323F60ED900B9D38A /* Enum.swift in Sources */,

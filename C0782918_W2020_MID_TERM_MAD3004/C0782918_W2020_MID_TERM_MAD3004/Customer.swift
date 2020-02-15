@@ -18,7 +18,7 @@ public class Customer
     var totalBillAmount: Float = 0.0
    
     init(customerId: Int, firstName: String, lastName: String, emailId : String)
-    { 
+    {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
@@ -26,6 +26,9 @@ public class Customer
         
     }
     
-    
+    func addBillToCustomer(bill:Bill)
+    {
+           billDictionary.updateValue(bill, forKey: bill.billId)
+    }
 
 }
