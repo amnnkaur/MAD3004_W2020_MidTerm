@@ -10,12 +10,15 @@ import Foundation
 
 public class Internet : Bill
 {
-    var providerName : String
-    var internetGBUsed : String
+    var providerName: String
+    var internetGBUsed: Int
     
-    init(providerName : String, internetGBUsed : String) {
-        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##Enum.type#>, totalBillAmount: <#T##Double#>)
+    init(billId: Int, billDate: String, billType: Enum.type, totalBillAmount: Double, providerName: String,internetGBUsed: Int )
+    {
+        
         self.providerName = providerName
         self.internetGBUsed = internetGBUsed
+        
+        super.init(billId: billId, billDate: billDate, billType: Enum.type.INTERNET, totalBillAmount: totalBillAmount)
     }
 }

@@ -11,11 +11,11 @@ import Foundation
 public class Bill: IDisplay {
    
     var billId : Int
-    var billDate : Date
+    var billDate = String()
     var billType : Enum.type
     var totalBillAmount : Double
     
-    init(billId : Int, billDate : Date, billType : Enum.type, totalBillAmount : Double) {
+    init(billId : Int, billDate : String, billType : Enum.type, totalBillAmount : Double) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType

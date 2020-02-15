@@ -13,10 +13,10 @@ public class Customer
     var customerId : Int
     var firstName : String
     var lastName : String
-    /*var fullName : String
-    {
-        return firstName+lastName
-    }*/
+   // var fullName : String
+    //{
+      //  return firstName+lastName
+    //}
     var emailId : String
    // var billDictionary : [String : Double]
     //var totalAmountToPay : Double

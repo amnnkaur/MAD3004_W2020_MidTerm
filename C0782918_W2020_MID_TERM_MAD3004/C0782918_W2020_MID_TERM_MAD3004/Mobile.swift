@@ -16,12 +16,14 @@ public class Mobile : Bill
     var internetGBUsed : String
     var minuteUsed : String
     
-    init(mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: String, minuteUsed: String) {
-        super.init(billId: <#T##Int#>, billDate: <#T##Date#>, billType: <#T##Enum.type#>, totalBillAmount: <#T##Double#>)
+    init(billId:Int, billDate: String, billType: Enum.type, totalBillAmount: Double, mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: String, minuteUsed: String) {
+        
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
         self.mobileNumber = mobileNumber
         self.internetGBUsed = internetGBUsed
         self.minuteUsed = minuteUsed
+        
+        super.init(billId: billId, billDate: billDate, billType: Enum.type.MOBILE, totalBillAmount: totalBillAmount)
     }
 }
