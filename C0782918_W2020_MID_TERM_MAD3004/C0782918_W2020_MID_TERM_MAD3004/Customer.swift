@@ -41,7 +41,8 @@ public class Customer
         return Float(totalBillAmount)
     }
 
-    func display() {
+    func display()
+    {
      print("\t")
      print("~~~~~CUSTOMER INFORMATION~~~~~")
      print("Customer ID: \(customerId)")
@@ -49,6 +50,20 @@ public class Customer
      print("Email Id: \(emailId)")
      
      print("~~~~~BILL INFORMATION~~~~~")
-     print("*********************************************")
-}
+        
+     print("*********************************")
+        
+     if billDictionary.isEmpty
+     {
+         print(" This Customer has no Bills to pay")
+     }
+     else
+     {
+         for b in billDictionary.values
+         {
+             b.display()
+             print("*********************************")
+         }
+     }
+    }
 }
