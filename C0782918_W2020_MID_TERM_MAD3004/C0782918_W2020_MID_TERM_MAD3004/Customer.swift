@@ -30,5 +30,15 @@ public class Customer
     {
            billDictionary.updateValue(bill, forKey: bill.billId)
     }
+    
+    func calculateTotalBillAmount() -> Float
+    {
+        
+        for i in billDictionary.values
+        {
+            totalBillAmount += i.totalBillAmount
+        }
+        return Float(totalBillAmount)
+    }
 
 }
