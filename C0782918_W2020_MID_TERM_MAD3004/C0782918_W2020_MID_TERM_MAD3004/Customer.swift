@@ -65,5 +65,6 @@ public class Customer
              print("*********************************")
          }
      }
+         print("Total Bill Amount to Pay: \(calculateTotalBillAmount().currencyFormat())")
     }
 }
