@@ -8,9 +8,8 @@
 
 import Foundation
 
-var cust1 = Customer(customerId: 1001, firstName: "Monika", lastName: "Sharma", emailId: "ms@gmail.com")
 
 
 
 
-print(cust1.fullName())
+

@@ -20,4 +20,12 @@ public class Hydro : Bill
         
         super.init(billId: billId, billDate: billDate, billType: Enum.type.HYDRO, totalBillAmount: totalBillAmount)
     }
+    
+    override func display()
+    {
+           super.display()
+        
+           print("Agency Name: \(agencyName)")
+           print("Units Consumed: \(unitConsumed.Units())")
+       }
 }

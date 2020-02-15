@@ -13,20 +13,17 @@ public class Customer
     var customerId : Int
     var firstName : String
     var lastName : String
-   // var fullName : String
-    //{
-      //  return firstName+lastName
-    //}
     var emailId : String
-   // var billDictionary : [String : Double]
-    //var totalAmountToPay : Double
+    var billDictionary = [Int:Bill]()
+    var totalBillAmount: Float = 0.0
    
-    init(customerId: Int, firstName: String, lastName: String, emailId : String){ //billDictionary :[String : Double] ) {
+    init(customerId: Int, firstName: String, lastName: String, emailId : String)
+    { 
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
-        //self.billDictionary = billDictionary
+        
     }
     
     
