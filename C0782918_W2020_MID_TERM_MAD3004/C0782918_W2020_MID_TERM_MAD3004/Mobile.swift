@@ -26,4 +26,16 @@ public class Mobile : Bill
         
         super.init(billId: billId, billDate: billDate, billType: Enum.type.MOBILE, totalBillAmount: totalBillAmount)
     }
+    
+    override func display()
+    {
+        super.display()
+        
+        print("Manufactuer Name : \(mobileManufacturerName)")
+        print("Plan Name: \(planName)")
+        print("Mobile Number: \(mobileNumber)")
+        print("Internet Used: \(internetGBUsed.GB())")
+        print("Minutes Used: \(minuteUsed.Min())")
+        
+    }
 }

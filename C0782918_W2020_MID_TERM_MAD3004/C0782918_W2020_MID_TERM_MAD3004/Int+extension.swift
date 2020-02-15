@@ -10,12 +10,12 @@ import Foundation
 
 extension Int
 {
-     func Units()->String
+     func Units()-> String
     {
         return "\(self) Units"
     }
     
-     func GB() ->String
+     func GB() -> String
     {
         return " \(self) GB"
     }
