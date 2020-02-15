@@ -21,4 +21,12 @@ public class Internet : Bill
         
         super.init(billId: billId, billDate: billDate, billType: Enum.type.INTERNET, totalBillAmount: totalBillAmount)
     }
+    
+    override func display()
+    {
+        super.display()
+        print("Provider Name: \(providerName)")
+        print("Internet GB Used: \(internetGBUsed.GB())")
+    }
+    
 }

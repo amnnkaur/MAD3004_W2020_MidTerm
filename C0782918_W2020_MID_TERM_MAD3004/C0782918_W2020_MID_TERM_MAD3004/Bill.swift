@@ -30,14 +30,3 @@ public class Bill: IDisplay {
     }
 }
 
-/*extension Person{
-    
-    var fullname = String{
-        return "\(firstName) \(lastName)"
-    }
-    
-    var age : Int
-    {
-        guard let bdate = self.birthdate
-    }
-}*/
