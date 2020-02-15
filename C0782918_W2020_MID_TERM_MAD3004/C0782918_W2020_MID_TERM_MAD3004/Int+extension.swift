@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String
+extension Int
 {
      func Units()-> String
     {

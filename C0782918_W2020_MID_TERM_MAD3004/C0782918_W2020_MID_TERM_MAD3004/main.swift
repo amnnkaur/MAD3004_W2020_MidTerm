@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+var bill01 = Internet(billId: 1, billDate: "01-01-2019" , billType: Enum.type.INTERNET, totalBillAmount: 50.0, providerName: "Fido", internetGBUsed: 15)
 
 
 
