@@ -41,4 +41,14 @@ public class Customer
         return Float(totalBillAmount)
     }
 
+    func display() {
+     print("\t")
+     print("~~~~~CUSTOMER INFORMATION~~~~~")
+     print("Customer ID: \(customerId)")
+     print("Customer Name: \(fullName())")
+     print("Email Id: \(emailId)")
+     
+     print("~~~~~BILL INFORMATION~~~~~")
+     print("*********************************************")
+}
 }
