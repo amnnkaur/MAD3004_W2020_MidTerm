@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B774FE223F780B800299547 /* Customer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FE123F780B800299547 /* Customer+extension.swift */; };
+		9B774FF723F7813A00299547 /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B774FF623F7813A00299547 /* Int+extension.swift */; };
 		9B8694A923F60CCE00B9D38A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694A823F60CCE00B9D38A /* main.swift */; };
 		9B8694B023F60DF900B9D38A /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694AF23F60DF900B9D38A /* Bill.swift */; };
 		9B8694B323F60ED900B9D38A /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8694B223F60ED900B9D38A /* Enum.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		9B774FE123F780B800299547 /* Customer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+extension.swift"; sourceTree = "<group>"; };
+		9B774FF623F7813A00299547 /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
 		9B8694A523F60CCE00B9D38A /* C0782918_W2020_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0782918_W2020_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8694A823F60CCE00B9D38A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B8694AF23F60DF900B9D38A /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				9B8694BA23F6148B00B9D38A /* Customer.swift */,
 				9B8694BC23F617FC00B9D38A /* IDisplay.swift */,
 				9B774FE123F780B800299547 /* Customer+extension.swift */,
+				9B774FF623F7813A00299547 /* Int+extension.swift */,
 			);
 			path = C0782918_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				9B8694A923F60CCE00B9D38A /* main.swift in Sources */,
 				9B8694B523F610F500B9D38A /* Internet.swift in Sources */,
 				9B8694B923F613F900B9D38A /* Hydro.swift in Sources */,
+				9B774FF723F7813A00299547 /* Int+extension.swift in Sources */,
 				9B774FE223F780B800299547 /* Customer+extension.swift in Sources */,
 				9B8694B323F60ED900B9D38A /* Enum.swift in Sources */,
 			);
