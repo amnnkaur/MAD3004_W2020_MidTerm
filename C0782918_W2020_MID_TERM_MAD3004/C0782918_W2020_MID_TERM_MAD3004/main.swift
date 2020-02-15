@@ -8,5 +8,13 @@
 
 import Foundation
 
+var cust1 = Customer(customerId: 1001, firstName: "Monika", lastName: "Sharma", emailId: "ms@gmail.com")
 
+extension Customer{
 
+func fullName() -> String {
+    return "\(self.firstName) \(self.lastName)"
+}
+}
+
+print(cust1.fullName())

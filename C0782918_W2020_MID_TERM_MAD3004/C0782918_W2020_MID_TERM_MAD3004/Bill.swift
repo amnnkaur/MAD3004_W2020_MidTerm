@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class Bill {
-    
+public class Bill: IDisplay {
+   
     var billId : Int
     var billDate : Date
     var billType : Enum.type
@@ -20,6 +20,24 @@ public class Bill {
         self.billDate = billDate
         self.billType = billType
         self.totalBillAmount = totalBillAmount
+        
+    }
+    
+    func display() {
+        print("Bill Id : \(billId)")
+        print("Bill Date : \(billDate)")
+        print("Bill Type : \(billType)")
     }
 }
 
+/*extension Person{
+    
+    var fullname = String{
+        return "\(firstName) \(lastName)"
+    }
+    
+    var age : Int
+    {
+        guard let bdate = self.birthdate
+    }
+}*/
