@@ -11,11 +11,11 @@ import Foundation
 public class Bill: IDisplay {
    
     var billId : Int
-    var billDate = String()
+    var billDate : Date
     var billType : Enum.type
     var totalBillAmount : Float
     
-    init(billId : Int, billDate : String, billType : Enum.type, totalBillAmount : Float) {
+    init(billId : Int, billDate : Date, billType : Enum.type, totalBillAmount : Float) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
@@ -25,7 +25,7 @@ public class Bill: IDisplay {
     
     func display() {
         print("\t\tBill Id : \(billId)")
-        print("\t\tBill Date : \(billDate)")
+        print("\t\tBill Date : \(billDate.getFormattedDate())")
         print("\t\tBill Type : \(billType)")
         print("\t\tBill Amount: \(totalBillAmount.currencyFormat())")
     }

@@ -13,7 +13,7 @@ public class Internet : Bill
     var providerName: String
     var internetGBUsed: Int
     
-    init(billId: Int, billDate: String, billType: Enum.type, totalBillAmount: Float, providerName: String,internetGBUsed: Int )
+    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, providerName: String,internetGBUsed: Int )
     {
         
         self.providerName = providerName
