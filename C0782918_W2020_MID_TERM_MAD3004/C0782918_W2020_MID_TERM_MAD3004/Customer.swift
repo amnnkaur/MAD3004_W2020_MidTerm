@@ -56,7 +56,14 @@ public class Customer
      print("~~~~~CUSTOMER INFORMATION~~~~~")
      print("Customer ID: \(customerId)")
      print("Customer Name: \(fullName())")
-     print("Email Id: \(emailId)")
+        
+        if self.emailValidation(email: emailId){
+          print("Customer Email ID : \(self.emailId)")
+        }
+        else{
+         print("Customer Email ID : invalid email")
+        }
+     
      
      print("\t\t\t\t~~~~~BILL INFORMATION~~~~~")
         
