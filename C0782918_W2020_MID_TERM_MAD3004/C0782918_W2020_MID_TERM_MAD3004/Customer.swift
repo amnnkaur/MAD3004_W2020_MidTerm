@@ -51,22 +51,22 @@ public class Customer
      print("Customer Name: \(fullName())")
      print("Email Id: \(emailId)")
      
-     print("~~~~~BILL INFORMATION~~~~~")
+     print("\t\t\t\t~~~~~BILL INFORMATION~~~~~")
         
-     print("*********************************")
+     print("\t\t******************************************")
         
      if billDictionary.isEmpty
      {
-         print(" This Customer has no Bills to pay")
+         print("\t\t This Customer has no Bills to pay")
      }
      else
      {
          for b in billDictionary.values
          {
              b.display()
-             print("*********************************")
+             print("\t\t******************************************")
          }
      }
-         print("Total Bill Amount to Pay: \(calculateTotalBillAmount().currencyFormat())")
+         print("\t\tTotal Bill Amount to Pay: \(calculateTotalBillAmount().currencyFormat())")
     }
 }
