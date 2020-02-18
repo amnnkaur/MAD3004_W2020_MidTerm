@@ -27,6 +27,13 @@ public class Mobile : Bill
         super.init(billId: billId, billDate: billDate, billType: Enum.type.MOBILE, totalBillAmount: totalBillAmount)
     }
     
+    func mobileNumberValidation(value: String) -> Bool {
+        let phonePattern = "^\\d{10}$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", phonePattern)
+      let result =  phoneTest.evaluate(with: value)
+        return result
+    }
+    
     override func display()
     {
         super.display()
