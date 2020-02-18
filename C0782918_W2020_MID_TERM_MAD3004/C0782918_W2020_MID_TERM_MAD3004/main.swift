@@ -29,4 +29,6 @@ var custDictionary = [Int: Customer]()
 
 func addCustomer(cust: Customer){
 
+    custDictionary.updateValue(cust, forKey: cust.customerId)
+    
 }
