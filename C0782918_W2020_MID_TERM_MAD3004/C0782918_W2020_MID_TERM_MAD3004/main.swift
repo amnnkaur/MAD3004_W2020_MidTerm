@@ -23,3 +23,6 @@ cust1.addBillToCustomer(bill: bill03)
 cust2.addBillToCustomer(bill: bill01)
 cust2.addBillToCustomer(bill: bill02)
 cust3.addBillToCustomer(bill: bill03)
+
+
+var custDictionary = [Int: Customer]()
