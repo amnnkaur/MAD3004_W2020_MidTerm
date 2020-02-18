@@ -26,3 +26,7 @@ cust3.addBillToCustomer(bill: bill03)
 
 
 var custDictionary = [Int: Customer]()
+
+func addCustomer(cust: Customer){
+
+}
