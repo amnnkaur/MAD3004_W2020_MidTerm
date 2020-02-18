@@ -10,11 +10,21 @@ import Foundation
 
 extension Date
 {
-public func getForamttedDate() -> String
-    {
-        let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "dd-MM-YYYY"
-        let formattedDate = dateFormatterPrint.string(from: self)
-        return formattedDate
-    }
+public func getFormattedDate() -> String
+  {
+      let dateFormatterPrint = DateFormatter()
+      dateFormatterPrint.dateFormat = "EEEE, d MMM, yyyy"
+  
+      let formattedDate = dateFormatterPrint.string(from: self)
+      return formattedDate
+  }
+
+  static func from(year: Int, month: Int, day: Int) -> Date? {
+      let calender = Calendar(identifier: .gregorian)
+      var dateComponents = DateComponents()
+      dateComponents.year = year
+      dateComponents.month = month
+      dateComponents.day = day
+      return calender.date(from: dateComponents) ?? nil
+  }
 }

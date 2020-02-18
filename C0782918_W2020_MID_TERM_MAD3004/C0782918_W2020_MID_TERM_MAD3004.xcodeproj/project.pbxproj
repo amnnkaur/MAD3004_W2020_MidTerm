@@ -80,13 +80,13 @@
 			isa = PBXGroup;
 			children = (
 				9B8694A823F60CCE00B9D38A /* main.swift */,
+				9B8694BC23F617FC00B9D38A /* IDisplay.swift */,
 				9B8694B223F60ED900B9D38A /* Enum.swift */,
 				9B8694AF23F60DF900B9D38A /* Bill.swift */,
 				9B8694B423F610F500B9D38A /* Internet.swift */,
 				9B8694B623F6127200B9D38A /* Mobile.swift */,
 				9B8694B823F613F900B9D38A /* Hydro.swift */,
 				9B8694BA23F6148B00B9D38A /* Customer.swift */,
-				9B8694BC23F617FC00B9D38A /* IDisplay.swift */,
 				9B774FE123F780B800299547 /* Customer+extension.swift */,
 				9B774FF623F7813A00299547 /* Int+extension.swift */,
 				9B774FF823F781A400299547 /* Currency+extension.swift */,
