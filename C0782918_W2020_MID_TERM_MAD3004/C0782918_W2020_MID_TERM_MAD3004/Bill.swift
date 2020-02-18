@@ -24,10 +24,10 @@ public class Bill: IDisplay {
     }
     
     func display() {
-        print("Bill Id : \(billId)")
-        print("Bill Date : \(billDate)")
-        print("Bill Type : \(billType)")
-        print("Bill Amount: \(totalBillAmount.currencyFormat())")
+        print("\t\tBill Id : \(billId)")
+        print("\t\tBill Date : \(billDate)")
+        print("\t\tBill Type : \(billType)")
+        print("\t\tBill Amount: \(totalBillAmount.currencyFormat())")
     }
 }
 
