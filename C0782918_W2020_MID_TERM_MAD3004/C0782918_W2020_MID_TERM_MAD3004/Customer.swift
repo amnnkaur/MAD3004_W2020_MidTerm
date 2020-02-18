@@ -33,12 +33,14 @@ public class Customer
     
     func calculateTotalBillAmount() -> Float
     {
-        
+        var stop: Float = 0.0
         for i in billDictionary.values
         {
             totalBillAmount += i.totalBillAmount
+            stop = totalBillAmount
         }
-        return Float(totalBillAmount)
+        totalBillAmount = 0.0
+        return Float(stop)
     }
 
     func display()
