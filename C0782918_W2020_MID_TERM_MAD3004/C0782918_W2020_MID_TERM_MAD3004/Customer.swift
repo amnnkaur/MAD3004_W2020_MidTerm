@@ -54,7 +54,7 @@ public class Customer
     {
      print("\t")
      print("~~~~~CUSTOMER INFORMATION~~~~~")
-     print("Customer ID: \(customerId)")
+        print("Customer ID: \(customerId.customerPrefix())")
      print("Customer Name: \(fullName())")
         
         if self.emailValidation(email: emailId){

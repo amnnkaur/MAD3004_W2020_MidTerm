@@ -42,6 +42,7 @@ public class Mobile : Bill
     
     override func display()
     {
+        print("\t\tBill Id : \(billId.mobilePrefix())")
         super.display()
         
         print("\t\tManufactuer Name : \(mobileManufacturerName)")

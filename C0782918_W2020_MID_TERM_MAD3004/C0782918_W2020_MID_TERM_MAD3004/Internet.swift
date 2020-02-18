@@ -31,6 +31,7 @@ public class Internet : Bill
     
     override func display()
     {
+        print("\t\tBill Id : \(billId.internetPrefix())")
         super.display()
         print("\t\tProvider Name: \(providerName)")
         print("\t\tInternet GB Used: \(internetGBUsed.GB())")

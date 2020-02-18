@@ -29,7 +29,7 @@ public class Bill: IDisplay {
     }
     
     func display() {
-        print("\t\tBill Id : \(billId)")
+        
         print("\t\tBill Date : \(billDate.getFormattedDate())")
         print("\t\tBill Type : \(billType)")
         print("\t\tBill Amount: \(calculateBill().currencyFormat())")

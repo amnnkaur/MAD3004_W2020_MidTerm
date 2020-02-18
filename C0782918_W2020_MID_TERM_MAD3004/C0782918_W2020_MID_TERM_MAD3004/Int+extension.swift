@@ -25,4 +25,24 @@ extension Int
         return " \(self) Minutes"
     }
     
+    func customerPrefix() -> String
+      {
+          return "C00\(self)"
+      }
+      
+      func mobilePrefix() -> String
+      {
+          return "MOBB00\(self)"
+      }
+    
+      func internetPrefix() -> String
+      {
+          return "INTB00\(self)"
+      }
+    
+      func hydroPrefix() -> String
+      {
+           return "HYDB00\(self)"
+      }
+    
 }

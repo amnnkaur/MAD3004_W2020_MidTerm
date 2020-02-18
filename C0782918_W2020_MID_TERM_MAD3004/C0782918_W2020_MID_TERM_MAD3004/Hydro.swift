@@ -29,6 +29,7 @@ public class Hydro : Bill
     
     override func display()
     {
+        print("\t\tBill Id : \(billId.hydroPrefix())")
            super.display()
         
            print("\t\tAgency Name: \(agencyName)")
