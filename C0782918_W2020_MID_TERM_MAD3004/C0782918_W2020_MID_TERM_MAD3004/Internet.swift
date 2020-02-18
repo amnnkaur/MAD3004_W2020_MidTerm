@@ -25,8 +25,8 @@ public class Internet : Bill
     override func display()
     {
         super.display()
-        print("Provider Name: \(providerName)")
-        print("Internet GB Used: \(internetGBUsed.GB())")
+        print("\t\tProvider Name: \(providerName)")
+        print("\t\tInternet GB Used: \(internetGBUsed.GB())")
     }
     
 }
