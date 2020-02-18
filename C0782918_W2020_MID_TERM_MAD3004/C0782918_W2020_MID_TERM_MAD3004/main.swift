@@ -36,3 +36,6 @@ func addCustomer(cust: Customer){
 addCustomer(cust: cust1)
 addCustomer(cust: cust2)
 addCustomer(cust: cust3)
+
+func getByCustomerId(customerId: Int){
+}
