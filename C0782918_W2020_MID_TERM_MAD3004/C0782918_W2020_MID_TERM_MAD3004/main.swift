@@ -37,5 +37,14 @@ addCustomer(cust: cust1)
 addCustomer(cust: cust2)
 addCustomer(cust: cust3)
 
-func getByCustomerId(customerId: Int){
+func getByCustomerId(customerId: Int)
+{
+    
+    if custDictionary.keys.contains(customerId)
+    {
+        custDictionary[customerId]?.display()
+    }else{
+        print("Customer not found")
+    }
+
 }
