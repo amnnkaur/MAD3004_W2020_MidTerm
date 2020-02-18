@@ -23,6 +23,11 @@ public class Bill: IDisplay {
         
     }
     
+    func calculateBill() -> Float
+    {
+        return totalBillAmount
+    }
+    
     func display() {
         print("\t\tBill Id : \(billId)")
         print("\t\tBill Date : \(billDate.getFormattedDate())")

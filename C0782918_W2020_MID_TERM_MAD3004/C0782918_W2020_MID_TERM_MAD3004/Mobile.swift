@@ -12,11 +12,11 @@ public class Mobile : Bill
 {
     var mobileManufacturerName : String
     var planName : String
-    var mobileNumber : Int
+    var mobileNumber :String
     var internetGBUsed : Int
     var minuteUsed : Int
     
-    init(billId:Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, mobileManufacturerName: String, planName :String, mobileNumber: Int, internetGBUsed: Int, minuteUsed: Int) {
+    init(billId:Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, mobileManufacturerName: String, planName :String, mobileNumber: String, internetGBUsed: Int, minuteUsed: Int) {
         
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
@@ -40,7 +40,12 @@ public class Mobile : Bill
         
         print("\t\tManufactuer Name : \(mobileManufacturerName)")
         print("\t\tPlan Name: \(planName)")
-        print("\t\tMobile Number: \(mobileNumber)")
+        if self.mobileNumberValidation(value: mobileNumber){
+             print("\t\tMobile Number : \(self.mobileNumber)")
+        }
+        else{
+            print("\t\tMobile Number : invalid mobile number")
+        }
         print("\t\tInternet Used: \(internetGBUsed.GB())")
         print("\t\tMinutes Used: \(minuteUsed.Min())")
         

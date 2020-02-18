@@ -22,6 +22,13 @@ public class Internet : Bill
         super.init(billId: billId, billDate: billDate, billType: Enum.type.INTERNET, totalBillAmount: totalBillAmount)
     }
     
+    override func calculateBill() -> Float {
+       // super.totalBillAmount = 5.0 * self.internetGBUsed
+        
+        return super.totalBillAmount
+    }
+    
+    
     override func display()
     {
         super.display()
