@@ -32,3 +32,7 @@ func addCustomer(cust: Customer){
     custDictionary.updateValue(cust, forKey: cust.customerId)
     
 }
+
+addCustomer(cust: cust1)
+addCustomer(cust: cust2)
+addCustomer(cust: cust3)
