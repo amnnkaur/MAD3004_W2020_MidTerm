@@ -52,5 +52,8 @@ func getByCustomerId(customerId: Int)
 }
 
 
-for c in custDictionary.keys.sorted(){
+for c in custDictionary.keys.sorted()
+{
+    custDictionary[c]?.display()
+
 }
