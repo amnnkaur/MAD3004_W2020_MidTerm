@@ -13,4 +13,4 @@ var bill02 = Mobile(billId: 2, billDate: "10-04-2019", billType: Enum.type.MOBIL
 var bill03 = Hydro(billId: 3, billDate: "13-06-2019", billType: Enum.type.HYDRO, totalBillAmount: 150, agencyName: "Ontario electricity Services Inc.", unitConsumed: 210)
 
 
-
+var cust1 = Customer(customerId: 1001, firstName: "Monika", lastName: "Sharma", emailId: "ms@gmail.com")
