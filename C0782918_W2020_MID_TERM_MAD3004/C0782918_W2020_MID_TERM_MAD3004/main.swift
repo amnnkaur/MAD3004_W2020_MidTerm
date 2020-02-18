@@ -14,3 +14,5 @@ var bill03 = Hydro(billId: 3, billDate: "13-06-2019", billType: Enum.type.HYDRO,
 
 
 var cust1 = Customer(customerId: 1001, firstName: "Monika", lastName: "Sharma", emailId: "ms@gmail.com")
+var cust2 = Customer(customerId: 1002, firstName: "IKROOP", lastName: "virk", emailId: "ikroop@gmail.com")
+
