@@ -13,17 +13,17 @@ public class Internet : Bill
     var providerName: String
     var internetGBUsed: Int
     
-    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, providerName: String,internetGBUsed: Int )
+    init(billId: Int, billDate: Date, billType: Enum.type, providerName: String,internetGBUsed: Int )
     {
         
         self.providerName = providerName
         self.internetGBUsed = internetGBUsed
         
-        super.init(billId: billId, billDate: billDate, billType: Enum.type.INTERNET, totalBillAmount: totalBillAmount)
+        super.init(billId: billId, billDate: billDate, billType: Enum.type.INTERNET)
     }
     
     override func calculateBill() -> Float {
-       // super.totalBillAmount = 5.0 * self.internetGBUsed
+     super.totalBillAmount = 5.0 * Float(self.internetGBUsed)
         
         return super.totalBillAmount
     }

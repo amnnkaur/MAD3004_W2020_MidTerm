@@ -13,12 +13,18 @@ public class Hydro : Bill
     var agencyName : String
     var unitConsumed : Int
     
-    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, agencyName: String, unitConsumed:Int) {
+    init(billId: Int, billDate: Date, billType: Enum.type, agencyName: String, unitConsumed:Int) {
         
         self.agencyName = agencyName
         self.unitConsumed = unitConsumed
         
-        super.init(billId: billId, billDate: billDate, billType: Enum.type.HYDRO, totalBillAmount: totalBillAmount)
+        super.init(billId: billId, billDate: billDate, billType: Enum.type.HYDRO)
+    }
+    
+    override func calculateBill() -> Float {
+     super.totalBillAmount = 5.0 * Float(self.unitConsumed)
+        
+        return super.totalBillAmount
     }
     
     override func display()

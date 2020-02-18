@@ -16,7 +16,7 @@ public class Mobile : Bill
     var internetGBUsed : Int
     var minuteUsed : Int
     
-    init(billId:Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, mobileManufacturerName: String, planName :String, mobileNumber: String, internetGBUsed: Int, minuteUsed: Int) {
+    init(billId:Int, billDate: Date, billType: Enum.type, mobileManufacturerName: String, planName :String, mobileNumber: String, internetGBUsed: Int, minuteUsed: Int) {
         
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
@@ -24,7 +24,7 @@ public class Mobile : Bill
         self.internetGBUsed = internetGBUsed
         self.minuteUsed = minuteUsed
         
-        super.init(billId: billId, billDate: billDate, billType: Enum.type.MOBILE, totalBillAmount: totalBillAmount)
+        super.init(billId: billId, billDate: billDate, billType: Enum.type.MOBILE)
     }
     
     func mobileNumberValidation(value: String) -> Bool {
@@ -32,6 +32,12 @@ public class Mobile : Bill
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phonePattern)
       let result =  phoneTest.evaluate(with: value)
         return result
+    }
+    
+    override func calculateBill() -> Float {
+        super.totalBillAmount = 10.0 * Float(self.internetGBUsed) + 2.0 * Float(self.minuteUsed)
+        
+        return super.totalBillAmount
     }
     
     override func display()
@@ -44,7 +50,7 @@ public class Mobile : Bill
              print("\t\tMobile Number : \(self.mobileNumber)")
         }
         else{
-            print("\t\tMobile Number : invalid mobile number")
+            print("\t\tMobile Number : Mobile number is not valid")
         }
         print("\t\tInternet Used: \(internetGBUsed.GB())")
         print("\t\tMinutes Used: \(minuteUsed.Min())")

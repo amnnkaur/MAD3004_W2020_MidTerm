@@ -13,13 +13,13 @@ public class Bill: IDisplay {
     var billId : Int
     var billDate : Date
     var billType : Enum.type
-    var totalBillAmount : Float
+    var totalBillAmount : Float = 0.0
     
-    init(billId : Int, billDate : Date, billType : Enum.type, totalBillAmount : Float) {
+    init(billId : Int, billDate : Date, billType : Enum.type) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-        self.totalBillAmount = totalBillAmount
+       // self.totalBillAmount = totalBillAmount
         
     }
     
@@ -32,7 +32,7 @@ public class Bill: IDisplay {
         print("\t\tBill Id : \(billId)")
         print("\t\tBill Date : \(billDate.getFormattedDate())")
         print("\t\tBill Type : \(billType)")
-        print("\t\tBill Amount: \(totalBillAmount.currencyFormat())")
+        print("\t\tBill Amount: \(calculateBill().currencyFormat())")
     }
 }
 

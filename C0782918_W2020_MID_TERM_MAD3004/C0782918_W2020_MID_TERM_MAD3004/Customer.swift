@@ -61,7 +61,7 @@ public class Customer
           print("Customer Email ID : \(self.emailId)")
         }
         else{
-         print("Customer Email ID : invalid email")
+         print("Customer Email ID : Email ID is not valid")
         }
      
      
@@ -71,7 +71,7 @@ public class Customer
         
      if billDictionary.isEmpty
      {
-         print("\t\t This Customer has no Bills to pay")
+         print("\t\t The Customer has no Bills to pay")
      }
      else
      {
