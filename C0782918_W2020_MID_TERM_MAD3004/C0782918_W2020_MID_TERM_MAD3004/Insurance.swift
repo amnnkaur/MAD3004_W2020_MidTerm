@@ -14,4 +14,13 @@ public class Insurance : Bill
   var insuranceType : String
   var startDate = String()
   var endDate = String()
+    
+    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, provider : String, insuranceType : String, startDate : String, endDate : String)
+    {
+      self.provider = provider
+      self.insuranceType = insuranceType
+      self.startDate = startDate
+      self.endDate = endDate
+      super.init(billId: billId, billDate: billDate, billType: billType)
+    }
 }
