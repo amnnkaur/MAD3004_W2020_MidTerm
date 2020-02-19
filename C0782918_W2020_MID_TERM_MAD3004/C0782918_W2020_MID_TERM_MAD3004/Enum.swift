@@ -12,7 +12,7 @@ public struct Enum
 {
     enum type
     {
-    case MOBILE, HYDRO, INTERNET
+    case MOBILE, HYDRO, INTERNET, INSURANCE
     }
 
 }
