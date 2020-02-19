@@ -10,17 +10,28 @@ import Foundation
 
 public class Insurance : Bill
 {
-  var provider : String
+  var providerName : String
   var insuranceType : String
   var startDate = String()
   var endDate = String()
     
-    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, provider : String, insuranceType : String, startDate : String, endDate : String)
+    init(billId: Int, billDate: Date, billType: Enum.type, totalBillAmount: Float, providerName : String, insuranceType : String, startDate : String, endDate : String)
     {
-      self.provider = provider
+      self.providerName = providerName
       self.insuranceType = insuranceType
       self.startDate = startDate
       self.endDate = endDate
+        
       super.init(billId: billId, billDate: billDate, billType: billType)
+    }
+    
+    override func display() {
+      super.display()
+        
+      print("\t\tInsurance provider name : \(providerName)")
+      print("\t\tInsurance type : \(insuranceType)")
+      print("\t\tStart date : \(startDate)")
+      print("\t\tEnd date : \(endDate)")
+       
     }
 }
