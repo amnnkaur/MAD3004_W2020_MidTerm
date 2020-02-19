@@ -30,12 +30,12 @@ public class Mobile : Bill
     func mobileNumberValidation(value: String) -> Bool {
         let phonePattern = "^\\d{10}$"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phonePattern)
-      let result =  phoneTest.evaluate(with: value)
+        let result =  phoneTest.evaluate(with: value)
         return result
     }
     
     override func calculateBill() -> Float {
-        super.totalBillAmount = 10.0 * Float(self.internetGBUsed) + 2.0 * Float(self.minuteUsed)
+        super.totalBillAmount = 4.0 * Float(self.internetGBUsed) + 2.0 * Float(self.minuteUsed)
         
         return super.totalBillAmount
     }
@@ -44,15 +44,16 @@ public class Mobile : Bill
     {
         print("\t\tBill Id : \(billId.mobilePrefix())")
         super.display()
-        
         print("\t\tManufactuer Name : \(mobileManufacturerName)")
         print("\t\tPlan Name: \(planName)")
+        
         if self.mobileNumberValidation(value: mobileNumber){
              print("\t\tMobile Number : \(self.mobileNumber)")
         }
         else{
             print("\t\tMobile Number : Mobile number is not valid")
         }
+        
         print("\t\tInternet Used: \(internetGBUsed.GB())")
         print("\t\tMinutes Used: \(minuteUsed.Min())")
         
