@@ -45,6 +45,14 @@ addCustomer(cust: cust03)
 addCustomer(cust: cust04)
 addCustomer(cust: cust05)
 
+
+for c in custDictionary.keys.sorted()
+{
+    custDictionary[c]?.display()
+
+}
+
+
 func getByCustomerId(customerId: Int)
 {
     
@@ -56,13 +64,6 @@ func getByCustomerId(customerId: Int)
     }else{
         print("Customer not found")
     }
-
-}
-
-
-for c in custDictionary.keys.sorted()
-{
-    custDictionary[c]?.display()
 
 }
 
